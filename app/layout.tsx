@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
 import { Roboto } from "next/font/google";
+
+import { Header, ShoppingCartModal } from "./components";
 import "./globals.css";
-import ShoppingCartModal from "./components/ShoppingCartModal";
-import Header from "./components/Header";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "400", "700", "900"] });
 
