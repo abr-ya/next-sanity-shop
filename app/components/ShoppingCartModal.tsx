@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 
-const ShoppingCartModal = () => {
-  return <div>ShoppingCartModal</div>;
+const ShoppingCartModal: FC = () => {
+  return <div>Todo: ShoppingCartModal</div>;
 };
 
 export default ShoppingCartModal;

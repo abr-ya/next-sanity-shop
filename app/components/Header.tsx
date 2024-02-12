@@ -1,11 +1,13 @@
 "use client";
 
+import { FC } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingBag } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
+// todo: categories from back
 const links = [
   { name: "Home", href: "/" },
   { name: "Men", href: "/men" },
@@ -13,7 +15,7 @@ const links = [
   { name: "Teens", href: "/teens" },
 ];
 
-const Header = () => {
+const Header: FC = () => {
   const pathname = usePathname();
 
   const baseClasses = "text-lg font-semibold";

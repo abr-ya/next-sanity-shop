@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 import { client, urlFor } from "../lib/sanity";
 import CategoryNav from "./CategoryNav";
@@ -9,7 +10,7 @@ const getData = async () => {
   return data;
 };
 
-const Hero = async () => {
+const Hero: FC = async () => {
   const data = await getData();
 
   return (

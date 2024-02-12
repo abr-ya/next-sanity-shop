@@ -1,6 +1,7 @@
+import { FC } from "react";
 import Link from "next/link";
 
-const CategoryNav = () => {
+const CategoryNav: FC = () => {
   const linkRender = (path: string) => (
     <Link
       href={`/${path.toLowerCase()}`}
@@ -13,6 +14,7 @@ const CategoryNav = () => {
   return (
     <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
       <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
+        {/* todo: categories from back! */}
         {linkRender("Men")}
         {linkRender("Women")}
         {linkRender("Teens")}

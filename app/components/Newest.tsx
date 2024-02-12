@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 import { simplifiedProduct } from "../interfaces";
 import { client } from "../lib/sanity";
+import { FC } from "react";
 
 const getData = async () => {
   const query = `*[_type == "product"][0...4] | order(_createdAt desc) {
@@ -20,7 +21,7 @@ const getData = async () => {
   return data;
 };
 
-const Newest = async () => {
+const Newest: FC = async () => {
   const data: simplifiedProduct[] = await getData();
 
   return (
